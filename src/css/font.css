@@ -1,0 +1,12 @@
+/* 2020-02-26 Web STANDARD CSS by JJI */
+@import url('https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+
+/* body		{ font-family: 'NanumSquare', sans-serif; } */
+.light		{ font-weight: 300 }
+.normal		{ font-weight: 400 }
+.bold		{ font-weight: 700 }
+.bolder		{ font-weight: 800 }
+.NS { font-family: 'Nanum Square'; font-style: normal;  font-weight: 400; }
+.NSB {  font-family: 'Nanum Square'; font-style: bold; font-weight: 700;}
+

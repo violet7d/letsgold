@@ -1,0 +1,6 @@
+/* 2020-02-22 Web STANDARD CSS by JJI */
+body, p, h1, h2, h3, h4, h5, h6, ul, li, dl {margin:0;padding:0;}
+body, div, p, ul, li {font-family: 'NanumSquare', sans-serif; font-style: normal;  font-weight: 400;}
+.both {content: "";display:block;float:none;clear:both;}
+li {list-style: none;}
+img { border:0}

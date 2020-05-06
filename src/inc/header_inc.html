@@ -1,0 +1,289 @@
+  
+         <script type="text/javascript">
+            $(document).ready(function(){
+                $(".fp-responsive #ml_memu").click(function(){
+                   $(".fp-responsive #left-menu-wrapper").addClass("show");
+                   $(".fp-responsive .left-menu-bg--is-mobile").addClass("active");
+                 })
+                 $(".fp-responsive .left-menu-bar--active-btn, .fp-responsive .left-menu-bg--is-mobile, .fp-responsive #menu").click(function(){
+                   $(".fp-responsive #left-menu-wrapper").addClass("hide").removeClass("show");
+                   $(".fp-responsive .left-menu-bg--is-mobile").removeClass("active");
+                 })
+            })
+        </script> 
+
+        <script type="text/javascript">
+            <!--
+            //모달1  창 
+            $(function () {
+                var open = $('.apply_form');
+                $('.apply_btn a').on('click', function () {
+                    if (open.css("display") == "none") {
+                        open.fadeIn(200);
+                        $('body').css('overflow', 'hidden');
+                    } else {
+                        open.fadeOut(200);
+                        $('body').css('overflow', 'visible');
+                    }
+                });
+            
+                $('.btn_area a.cancel, a.close').on('click', function () {
+                    open.fadeOut(200);
+                    $('body').css('overflow', 'visible');
+                });
+            });
+            //모달1 끝
+            
+            //모달2
+            $(function () {
+                var open = $('.apply_form2');
+                $('.apply_btn2 a').on('click', function () {
+                    if (open.css("display") == "none") {
+                        open.fadeIn(200);
+                        $('body').css('overflow', 'hidden');
+                    } else {
+                        open.fadeOut(200);
+                        $('body').css('overflow', 'visible');
+                    }
+                });
+            
+                $('.btn_area a.cancel, a.close').on('click', function () {
+                    open.fadeOut(200);
+                    $('body').css('overflow', 'visible');
+                });
+            });
+
+            //모달2 끝
+            //모달3
+            $(function () {
+                var open = $('.apply_form3');
+                $('.apply_btn3 a').on('click', function () {
+                    if (open.css("display") == "none") {
+                        open.fadeIn(200);
+                        $('body').css('overflow', 'hidden');
+                    } else {
+                        open.fadeOut(200);
+                        $('body').css('overflow', 'visible');
+                    }
+                });
+            
+                $('.btn_area a.cancel, a.close').on('click', function () {
+                    open.fadeOut(200);
+                    $('body').css('overflow', 'visible');
+                });
+            });
+
+            //모달3 끝
+            //모달 공통 시작
+            
+            $(window).resize(function () {
+                pop_size();
+            });
+            
+            $(document).ready(function () {
+                pop_size();
+            });
+            //모달 공통 끝
+            //-->
+            </script>
+                <script type="text/javascript">
+                    $(function(){ 
+                        includeLayout();
+                        }); 
+                        function includeLayout(){ 
+                            var includeArea = $('[data-include]'); 
+                            var self, url; $.each(includeArea, function() { self = 
+                            $(this); url = self.data("include"); 
+                            self.load(
+                                url, function() { 
+                                self.removeAttr("data-include"); 
+                                }); 
+                        }); 
+                    } 
+                </script>
+
+                <script>
+                    // When the user scrolls down 20px from the top of the document, slide down the navbar
+                    window.onscroll = function() {scrollFunction()};
+                    
+                    function scrollFunction() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        document.getElementById("navbar").style.bottom = "0";
+                        document.getElementById("navbar").style.left = "0";
+                        document.getElementById("navbar").style.right = "0";
+                    } else {
+                        document.getElementById("navbar").style.bottom = "30px";
+                        document.getElementById("navbar").style.left = "30px";
+                        document.getElementById("navbar").style.right = "30px";
+                    }
+                    }
+                    </script>
+                    
+
+
+
+         <div id="gnb">
+            <h1><a href="/" class="logo">한국금거래소디지털에셋 센골드</a></h1>
+            <button data-gnb-active="mobile-button" type="button" id="ml_memu">메뉴 열기/닫기</button>
+        </div>
+         <!--하단 앱다운로드 버튼-->
+        <div id="navbar"class="m_view">
+             <a href="market://details?id=com.cengold.korda"><img src="../img/img_store_1_w2_mobile.png" alt="센골드 플레이 스토어"></a>
+             <a href="itms-apps://itunes.apple.com/kr/app/apple-store/id1484761981"><img src="../img/img_store_2_w2_mobile.png" alt="센골드 앱스토어"></a>
+        </div>
+        <!--//gnb only for Mobile-->
+        <!--left-menu-bar section-->
+        <div id="left-menu-wrapper" class="">
+            <a href="javascript:;" class="left-menu-bar--active-btn">활성화</a>
+            <div id="left-menu-bar" class="left-menu-bar">
+                <div class="left-menu-bar--top-section">
+                    <h1 class="left-menu-bar__logo"><a href="/">센골드 한국금거래소디지털에셋</a></h1>
+                    <ul id="menu" class="left-menu-bar__category-list">
+                        <li class="left-menu-bar__category-list--list01" data-tooltip="is-second" data-scroll-point="contents--section1" data-menuanchor="is-second">
+                            <a href="#is-second"><span>센골드, 세상 편한 금투자  </span></a>
+                        </li>
+                        <li class="left-menu-bar__category-list--list04" data-tooltip="is-eighth" data-scroll-point="contents--section7" data-menuanchor="is-eighth">
+                            <a href="#is-eighth"><span>소식</span></a>
+                        </li>
+                        <li class="left-menu-bar__category-list--list02" data-tooltip="is-third" data-scroll-point="contents--section2" data-menuanchor="is-third">
+                            <a href="#is-third"><span>서비스</span></a>
+                        </li>
+                        <li class="left-menu-bar__category-list--list03" data-tooltip="is-seventh" data-scroll-point="contents--section6" data-menuanchor="is-seventh">
+                            <a href="#is-seventh"><span>문화</span></a>
+                        </li>
+                        
+                        <li class="left-menu-bar__category-list--list05" data-tooltip="is-nineth" data-scroll-point="contents--section8" data-menuanchor="is-nineth">
+                            <a href="#is-nineth"><span>CONTACT US</span></a>
+                        </li>
+                    </ul>
+                </div>
+            <div class="left-menu-bar--bottom-section">
+                <div class="left-menu-bar__contents-list">
+                        <ul>
+                            <!--new 아이콘 추가 시, span 태그 추가-->
+                                <li>
+                                    <span class='tt'>센골드 e금 시세</span><br>
+                                    <span class="blinkText" style="color: #87dfff; font-weight: bold;">242,164</span><span class="g">원/돈</span>
+                                </li>
+                                <li>
+                                    <span class='tt'>센골드 e은 시세</span><br>
+                                    <span>2,591</span><span class="g">원/돈</span>
+                                </li>
+                                <li>
+                                    <span class='tt'>금 살때 소매시세</span><br>
+                                    <span>250,500</span><span class="g">원/돈</span>
+                                </li>
+                                <li>
+                                    <span class='tt'>금 팔 때 소매시세</span><br>
+                                    <span>221,000</span><span class="g">원/돈</span>
+                                </li>
+                                <li>
+                                    <span class='tt'>원/달러 환율</span><br>
+                                    <span>1,185.7</span><span class="g">원/$</span>
+                                </li>
+                                <li>
+                                    <span class='tt'>BitCoin 시세</span><br>
+                                    <span>10,558,000</span><span class="g">원/btc</span>
+                                </li>
+                                <li>
+                                    <span class='tt'>KOSPI</span><br>
+                                    <span id="kospi">1,954.77</span><span class="g"> point</span>
+                                </li>
+                                <li>
+                                    <span class='tt'>KOSDAQ</span><br>
+                                    <span id="kosdaq">614.6</span><span class="g"> point</span>
+                                </li>
+            
+                                <li>
+                                    <span class='tt'>BitCoin</span><br>
+                                    <span id="btc">9,735,000</span><span class="g"> 원/btc</span>
+                                </li>
+                                <li class="last">
+                                    <span class='tt'>Ethereum</span><br>
+                                    <span id="eth" class="blinkText" style="color: #ff7575; font-weight: bold;">253,900</span><span class="g"> 원/eth</span>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="left-menu-bar__sns-list">
+                        <ul>
+                            <li><a href="https://www.youtube.com/channel/UCqZwkP5qKoRttaLn7j3aTiw" target="_blank">Youtube</a></li>
+                            <li><a href="https://www.instagram.com/cen_gold/" target="_blank">Instagram</a></li>
+                            <li><a href="https://blog.naver.com/cengold" target="_blank">Blog</a></li>
+                            <li class="last"><a href="https://bit.ly/36TFtnj" target="_blank"> Facebook </a></li>
+                        </ul>
+                    </div>
+                    <div class="left-menu-bar_service">
+                        <ul>
+                            <li class="apply_btn"><a href="javascript:;">개인정보처리방침</a></li>
+                            <li class="apply_btn2"><a href="javascript:;">서비스 이용약관</a></li>
+                            <li class="apply_btn3 last"><a href="javascript:;">상품권 이용약관</a></li>
+                        </ul>
+                    </div>
+                    <div class="left-menu-bar__copyright">
+                        <dfn>㈜한국금거래소디지털에셋</dfn>
+                        <dl>
+                            <dt>대표이사 : 김종인  | 사업자등록번호	: 764-81-01460 </dt>
+                            <dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>통신판매업신고	: 제2019-서울중구-0900호</dt>
+                            <dd></dd>
+                        </dl>
+                        <dl>
+                            <dt>서비스 문의	: 02-1670-8456 / help@koreada.kr </dt>
+                            <dd></dd>
+                        </dl>
+                        <dl>
+                            <dt >(03139) 서울특별시 종로구 돈화문로5가길 1<br>(돈의동, 피카디리플러스) 7-2호</dt>
+                            <dd></dd>
+                        </dl>
+                        <p>Copyright © KoreaDA. All rights reserved.</p>
+                    </div>
+
+
+
+                    <div class="apply_form" style="display:none;">
+                        <div class="scroll_wrap">
+                            <div class="form_wrap">
+                                <h1>개인정보처리방침</h1>
+                                <a href="javascript:;" class="close">닫 기</a>
+                                <div class="con_tt">
+                                    <article role="article" data-include="../inc/privacy_inc.html"></article>
+                                </div>
+                                <!-- con_tt -->
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="apply_form2" style="display:none;">
+                        <div class="scroll_wrap">
+                            <div class="form_wrap">
+                                <h1>서비스 이용약관</h1>
+                                <a href="javascript:;" class="close">닫 기</a>
+                                <div class="con_tt">
+                                    <article role="article" data-include="../inc/service_inc.html"></article>
+                                   
+                                </div>
+                                <!-- con_tt -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="apply_form3" style="display:none;">
+                        <div class="scroll_wrap">
+                            <div class="form_wrap">
+                                <h1>상품권 이용약관</h1>
+                                <a href="javascript:;" class="close">닫 기</a>
+                                <div class="con_tt">
+                                    <article role="article" data-include="../inc/giftcard_inc.html"></article>
+                                </div>
+                                 <!-- con_tt -->
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <!--//left-menu-bar section-->
+        <div class="left-menu-bg--is-mobile"></div>
